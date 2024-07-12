@@ -6,9 +6,14 @@ import GameCircle from "./GameCircle";
 
 const GameBoard = () => {
    
+    const circleClicked = (id) => {
+        debugger;
+        console.log('circle clicked:' + id);
+    }
+
     return (
         <div className="gameBoard">
-            <GameCircle id={1} >
+            <GameCircle id={1} onCircleClicked={circleClicked} >
                 
             </GameCircle> 
             <GameCircle id={2} >
